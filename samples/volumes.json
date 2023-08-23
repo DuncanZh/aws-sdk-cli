@@ -1,0 +1,1854 @@
+[
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-04-20T14:48:22Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/sda1",
+    "InstanceId": "i-08307f9959bb1e837",
+    "State": "attached",
+    "VolumeId": "vol-01f5e202b31789dde"
+   }
+  ],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-04-20T14:48:22.928Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 192,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 64,
+  "SnapshotId": "snap-0c45002bf2268d9a5",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": null,
+  "Throughput": null,
+  "VolumeId": "vol-01f5e202b31789dde",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-04-20T14:48:22Z",
+    "DeleteOnTermination": false,
+    "Device": "/dev/sdc",
+    "InstanceId": "i-08307f9959bb1e837",
+    "State": "attached",
+    "VolumeId": "vol-032cec59157f2ccee"
+   }
+  ],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-04-20T14:48:23.008Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 3000,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 64,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": null,
+  "Throughput": 125,
+  "VolumeId": "vol-032cec59157f2ccee",
+  "VolumeType": "gp3"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-04-20T14:48:22Z",
+    "DeleteOnTermination": false,
+    "Device": "/dev/sdb",
+    "InstanceId": "i-08307f9959bb1e837",
+    "State": "attached",
+    "VolumeId": "vol-00d0dfee442df2c97"
+   }
+  ],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-04-20T14:48:23.07Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 192,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 64,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": null,
+  "Throughput": null,
+  "VolumeId": "vol-00d0dfee442df2c97",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-04-20T14:48:22Z",
+    "DeleteOnTermination": false,
+    "Device": "/dev/sdd",
+    "InstanceId": "i-08307f9959bb1e837",
+    "State": "attached",
+    "VolumeId": "vol-032438d42f5d79bb5"
+   }
+  ],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-04-20T14:48:23.128Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 3000,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 64,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": null,
+  "Throughput": 125,
+  "VolumeId": "vol-032438d42f5d79bb5",
+  "VolumeType": "gp3"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-04-21T19:59:09Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/sda1",
+    "InstanceId": "i-0c5dd097176a8e345",
+    "State": "attached",
+    "VolumeId": "vol-0b2cf41e3db42be69"
+   }
+  ],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-04-21T19:59:09.455Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 3000,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 64,
+  "SnapshotId": "snap-0c45002bf2268d9a5",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": null,
+  "Throughput": 125,
+  "VolumeId": "vol-0b2cf41e3db42be69",
+  "VolumeType": "gp3"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-08-04T22:41:12.464Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-fd1bfa62-a6e9-44e5-9de5-a74843ba7456"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-1"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-fd1bfa62-a6e9-44e5-9de5-a74843ba7456"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-fd1bfa62-a6e9-44e5-9de5-a74843ba7456"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-054ef3de62ab0a518",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-08-05T17:06:19.597Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-3736dfa6-5775-4eca-80e0-d29f737b72c3"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-3736dfa6-5775-4eca-80e0-d29f737b72c3"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-3736dfa6-5775-4eca-80e0-d29f737b72c3"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-0"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-07d0e0b473f307ccc",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-08-05T17:06:19.675Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-b780e48a-6b06-4d81-a0a5-02396f08f722"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-b780e48a-6b06-4d81-a0a5-02396f08f722"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-1"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-b780e48a-6b06-4d81-a0a5-02396f08f722"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-038dcd9152148d449",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-08-05T20:18:12.379Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-c4a7b4a8-cb39-4caf-b7d0-16ed10c7901f"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-c4a7b4a8-cb39-4caf-b7d0-16ed10c7901f"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-c4a7b4a8-cb39-4caf-b7d0-16ed10c7901f"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-1"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0d9aed589cd6be20e",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-08-06T01:37:50.733Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-1"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-e2073afb-3e95-4547-b554-a1c61f33ddba"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-e2073afb-3e95-4547-b554-a1c61f33ddba"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-e2073afb-3e95-4547-b554-a1c61f33ddba"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0a734d0eb1673f82d",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-08-07T19:52:30.565Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-25ffd095-297a-445d-adc7-caa7712331f1"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-25ffd095-297a-445d-adc7-caa7712331f1"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-0"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-25ffd095-297a-445d-adc7-caa7712331f1"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0016a7fd3959184ff",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-08T01:43:50Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/xvda",
+    "InstanceId": "i-021c35801803a3daf",
+    "State": "attached",
+    "VolumeId": "vol-0d0391bf2fe06cfac"
+   }
+  ],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-08-08T01:43:50.518Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 20,
+  "SnapshotId": "snap-01ecdc54cddaa0fef",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "k8s.io/cluster-autoscaler/enabled",
+    "Value": "true"
+   },
+   {
+    "Key": "eks:cluster-name",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "Name",
+    "Value": "default"
+   },
+   {
+    "Key": "eks:nodegroup-name",
+    "Value": "default"
+   },
+   {
+    "Key": "k8s.io/cluster-autoscaler/terraform-cluster",
+    "Value": "owned"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0d0391bf2fe06cfac",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-08T02:38:46Z",
+    "DeleteOnTermination": false,
+    "Device": "/dev/xvdaa",
+    "InstanceId": "i-0a510d7429f8b8a8d",
+    "State": "attached",
+    "VolumeId": "vol-0bef88ff1163bda8d"
+   }
+  ],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-08-08T02:11:21.991Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-87e4f47c-7e96-45a8-8b44-8de2ef3e40f5"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-87e4f47c-7e96-45a8-8b44-8de2ef3e40f5"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-2"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-87e4f47c-7e96-45a8-8b44-8de2ef3e40f5"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0bef88ff1163bda8d",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-08T02:37:46Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/xvda",
+    "InstanceId": "i-0a510d7429f8b8a8d",
+    "State": "attached",
+    "VolumeId": "vol-0f679ecbc93fe5e0e"
+   }
+  ],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-08-08T02:37:46.862Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 20,
+  "SnapshotId": "snap-01ecdc54cddaa0fef",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "eks:cluster-name",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "Name",
+    "Value": "etcd-us-east-2c"
+   },
+   {
+    "Key": "k8s.io/cluster-autoscaler/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "eks:nodegroup-name",
+    "Value": "etcd-us-east-2c"
+   },
+   {
+    "Key": "k8s.io/cluster-autoscaler/enabled",
+    "Value": "true"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0f679ecbc93fe5e0e",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-22T21:48:53Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/sda1",
+    "InstanceId": "i-0aeb940be09c4b78d",
+    "State": "attached",
+    "VolumeId": "vol-02ac71b3eebe77d8a"
+   }
+  ],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-08-22T21:48:53.257Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 10,
+  "SnapshotId": "snap-0479846bc2b298795",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": null,
+  "Throughput": null,
+  "VolumeId": "vol-02ac71b3eebe77d8a",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-22T21:56:20Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/sda1",
+    "InstanceId": "i-0efce145932f39421",
+    "State": "attached",
+    "VolumeId": "vol-0efa42cda93d74c67"
+   }
+  ],
+  "AvailabilityZone": "us-east-2c",
+  "CreateTime": "2023-08-22T21:56:20.441Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 10,
+  "SnapshotId": "snap-0479846bc2b298795",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": null,
+  "Throughput": null,
+  "VolumeId": "vol-0efa42cda93d74c67",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2b",
+  "CreateTime": "2023-06-29T09:12:41.625Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-642c7931-1631-4921-b930-f0722c6681eb"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "AWSTest"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "prometheus-server"
+   },
+   {
+    "Key": "Name",
+    "Value": "AWSTest-dynamic-pvc-642c7931-1631-4921-b930-f0722c6681eb"
+   },
+   {
+    "Key": "kubernetes.io/cluster/AWSTest",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-642c7931-1631-4921-b930-f0722c6681eb"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "prometheus"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0cf90e8644265f591",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-03T19:56:14Z",
+    "DeleteOnTermination": false,
+    "Device": "/dev/xvdb",
+    "InstanceId": "i-091cf44776e50f6df",
+    "State": "attached",
+    "VolumeId": "vol-022085e17615d56c2"
+   }
+  ],
+  "AvailabilityZone": "us-east-2b",
+  "CreateTime": "2023-07-26T12:51:30.604Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-0daf9967-53c4-4054-bd36-f8f649c86487"
+   },
+   {
+    "Key": "Name",
+    "Value": "eks-test-dynamic-pvc-0daf9967-53c4-4054-bd36-f8f649c86487"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-1"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "eks-test"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-0daf9967-53c4-4054-bd36-f8f649c86487"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "kubernetes.io/cluster/eks-test",
+    "Value": "owned"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-022085e17615d56c2",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-02T19:11:12Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/xvda",
+    "InstanceId": "i-0dfc274d6d9fa2695",
+    "State": "attached",
+    "VolumeId": "vol-04383ae867d30e450"
+   }
+  ],
+  "AvailabilityZone": "us-east-2b",
+  "CreateTime": "2023-08-02T19:11:12.275Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "snap-01ecdc54cddaa0fef",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": null,
+  "Throughput": null,
+  "VolumeId": "vol-04383ae867d30e450",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-03T19:55:10Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/xvda",
+    "InstanceId": "i-091cf44776e50f6df",
+    "State": "attached",
+    "VolumeId": "vol-060a6dbf28c77ceaa"
+   }
+  ],
+  "AvailabilityZone": "us-east-2b",
+  "CreateTime": "2023-08-03T19:55:10.956Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 10,
+  "SnapshotId": "snap-01ecdc54cddaa0fef",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": null,
+  "Throughput": null,
+  "VolumeId": "vol-060a6dbf28c77ceaa",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2b",
+  "CreateTime": "2023-08-04T22:41:12.486Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-b9197414-7f85-47b3-aa83-5b9e83801184"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-2"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-b9197414-7f85-47b3-aa83-5b9e83801184"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-b9197414-7f85-47b3-aa83-5b9e83801184"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-09bef946262458314",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2b",
+  "CreateTime": "2023-08-05T20:18:12.406Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-4f1e62eb-ea1c-4257-8af7-e5950b68cd87"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-4f1e62eb-ea1c-4257-8af7-e5950b68cd87"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-2"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-4f1e62eb-ea1c-4257-8af7-e5950b68cd87"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-00fe93fec913a5a8c",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2b",
+  "CreateTime": "2023-08-06T01:37:50.742Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-265682e2-5f02-4bdc-8d5d-e3d2ce8b4e4b"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-2"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-265682e2-5f02-4bdc-8d5d-e3d2ce8b4e4b"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-265682e2-5f02-4bdc-8d5d-e3d2ce8b4e4b"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0ffbe8a5559d966ed",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2b",
+  "CreateTime": "2023-08-07T19:53:01.365Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-8ba05ca9-c105-4f98-b8ad-6f1140925801"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-2"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-8ba05ca9-c105-4f98-b8ad-6f1140925801"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-8ba05ca9-c105-4f98-b8ad-6f1140925801"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-07374c642ce363f31",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-08T01:42:15Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/xvda",
+    "InstanceId": "i-05b289ee177ae1f0a",
+    "State": "attached",
+    "VolumeId": "vol-05a4756c2510d8fd1"
+   }
+  ],
+  "AvailabilityZone": "us-east-2b",
+  "CreateTime": "2023-08-08T01:42:15.463Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 20,
+  "SnapshotId": "snap-01ecdc54cddaa0fef",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "eks:nodegroup-name",
+    "Value": "default"
+   },
+   {
+    "Key": "k8s.io/cluster-autoscaler/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "k8s.io/cluster-autoscaler/enabled",
+    "Value": "true"
+   },
+   {
+    "Key": "eks:cluster-name",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "Name",
+    "Value": "default"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-05a4756c2510d8fd1",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-08T02:38:22Z",
+    "DeleteOnTermination": false,
+    "Device": "/dev/xvdaa",
+    "InstanceId": "i-047f14a809ef6b40e",
+    "State": "attached",
+    "VolumeId": "vol-04f5c28c05af84fd4"
+   }
+  ],
+  "AvailabilityZone": "us-east-2b",
+  "CreateTime": "2023-08-08T02:11:17.982Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-1"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-a455d7ed-2273-4b8f-b47b-f7cc297359f1"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-a455d7ed-2273-4b8f-b47b-f7cc297359f1"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-a455d7ed-2273-4b8f-b47b-f7cc297359f1"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-04f5c28c05af84fd4",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-08T02:37:32Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/xvda",
+    "InstanceId": "i-047f14a809ef6b40e",
+    "State": "attached",
+    "VolumeId": "vol-07ed20c70a9e7d114"
+   }
+  ],
+  "AvailabilityZone": "us-east-2b",
+  "CreateTime": "2023-08-08T02:37:32.355Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 20,
+  "SnapshotId": "snap-01ecdc54cddaa0fef",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "etcd-us-east-2b"
+   },
+   {
+    "Key": "k8s.io/cluster-autoscaler/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "eks:cluster-name",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "eks:nodegroup-name",
+    "Value": "etcd-us-east-2b"
+   },
+   {
+    "Key": "k8s.io/cluster-autoscaler/enabled",
+    "Value": "true"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-07ed20c70a9e7d114",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-03-24T20:51:28Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/sda1",
+    "InstanceId": "i-08e8f296f3f57b719",
+    "State": "attached",
+    "VolumeId": "vol-03806584c5ff53c9b"
+   }
+  ],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-03-24T20:51:28.754Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "snap-08249a12b2043497e",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": null,
+  "Throughput": null,
+  "VolumeId": "vol-03806584c5ff53c9b",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-06-29T09:12:41.593Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 2,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/cluster/AWSTest",
+    "Value": "owned"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-f67850de-1bd5-4f18-9e44-2ccb1073b717"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "prometheus"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-f67850de-1bd5-4f18-9e44-2ccb1073b717"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "Name",
+    "Value": "AWSTest-dynamic-pvc-f67850de-1bd5-4f18-9e44-2ccb1073b717"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "storage-prometheus-alertmanager-0"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "AWSTest"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0060cadf6ad9eeeeb",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-03T19:57:44Z",
+    "DeleteOnTermination": false,
+    "Device": "/dev/xvdb",
+    "InstanceId": "i-032dfd9dc22f2e457",
+    "State": "attached",
+    "VolumeId": "vol-0d112094db9e8c94c"
+   }
+  ],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-07-26T12:51:30.518Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-669218cb-5a0d-45f9-8e5e-fe8906717622"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "eks-test"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "kubernetes.io/cluster/eks-test",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-0"
+   },
+   {
+    "Key": "Name",
+    "Value": "eks-test-dynamic-pvc-669218cb-5a0d-45f9-8e5e-fe8906717622"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-669218cb-5a0d-45f9-8e5e-fe8906717622"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0d112094db9e8c94c",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-03T19:57:44Z",
+    "DeleteOnTermination": false,
+    "Device": "/dev/xvdc",
+    "InstanceId": "i-032dfd9dc22f2e457",
+    "State": "attached",
+    "VolumeId": "vol-0a5bec5cf1025dc38"
+   }
+  ],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-07-26T12:51:30.617Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-2833fa14-028d-4f0c-9155-9eaa5aec15e3"
+   },
+   {
+    "Key": "kubernetes.io/cluster/eks-test",
+    "Value": "owned"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "eks-test"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-2833fa14-028d-4f0c-9155-9eaa5aec15e3"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-2"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "Name",
+    "Value": "eks-test-dynamic-pvc-2833fa14-028d-4f0c-9155-9eaa5aec15e3"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0a5bec5cf1025dc38",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-03T19:56:48Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/xvda",
+    "InstanceId": "i-032dfd9dc22f2e457",
+    "State": "attached",
+    "VolumeId": "vol-08ee569cd6d8a4f9a"
+   }
+  ],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-08-03T19:56:49.01Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 10,
+  "SnapshotId": "snap-01ecdc54cddaa0fef",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": null,
+  "Throughput": null,
+  "VolumeId": "vol-08ee569cd6d8a4f9a",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-08-04T22:41:12.461Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-0"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-915e2abf-2159-4681-bcc3-218388aada00"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-915e2abf-2159-4681-bcc3-218388aada00"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-915e2abf-2159-4681-bcc3-218388aada00"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0761355c05c0af4f7",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-08-05T17:06:19.711Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-8bc2684c-b392-4473-90a1-6d80927b1cdf"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-8bc2684c-b392-4473-90a1-6d80927b1cdf"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-8bc2684c-b392-4473-90a1-6d80927b1cdf"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-2"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0737158b1e1f0d02c",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-08-05T20:18:12.311Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-9ba0e8fd-3721-418b-8e66-cb34c5e842d2"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-9ba0e8fd-3721-418b-8e66-cb34c5e842d2"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-9ba0e8fd-3721-418b-8e66-cb34c5e842d2"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-0"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-04383b8f1e5bf09ce",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-08-06T01:37:50.779Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-11bd2935-11df-43a9-865f-87e35b374401"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-11bd2935-11df-43a9-865f-87e35b374401"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-0"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-11bd2935-11df-43a9-865f-87e35b374401"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0500e5d92b49bbe27",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-08-07T19:52:47.346Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "available",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-1"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-b1f11123-f9be-4026-839f-6ac46c3b910d"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-b1f11123-f9be-4026-839f-6ac46c3b910d"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-b1f11123-f9be-4026-839f-6ac46c3b910d"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-05eeacedb7005bc18",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-08T02:38:03Z",
+    "DeleteOnTermination": false,
+    "Device": "/dev/xvdaa",
+    "InstanceId": "i-08101f70c7677be04",
+    "State": "attached",
+    "VolumeId": "vol-066e3ff13552e2253"
+   }
+  ],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-08-08T02:11:15.16Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 8,
+  "SnapshotId": "",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "CSIVolumeName",
+    "Value": "pvc-1e9f16e5-0729-43cd-b5bb-2975a273c9b9"
+   },
+   {
+    "Key": "ebs.csi.aws.com/cluster",
+    "Value": "true"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/namespace",
+    "Value": "etcd"
+   },
+   {
+    "Key": "Name",
+    "Value": "terraform-cluster-dynamic-pvc-1e9f16e5-0729-43cd-b5bb-2975a273c9b9"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pvc/name",
+    "Value": "data-etcd-0"
+   },
+   {
+    "Key": "KubernetesCluster",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "kubernetes.io/created-for/pv/name",
+    "Value": "pvc-1e9f16e5-0729-43cd-b5bb-2975a273c9b9"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-066e3ff13552e2253",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-08T02:37:04Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/xvda",
+    "InstanceId": "i-08101f70c7677be04",
+    "State": "attached",
+    "VolumeId": "vol-0c375efc03f584971"
+   }
+  ],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-08-08T02:37:04.598Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 20,
+  "SnapshotId": "snap-01ecdc54cddaa0fef",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "eks:cluster-name",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "k8s.io/cluster-autoscaler/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "eks:nodegroup-name",
+    "Value": "etcd-us-east-2a"
+   },
+   {
+    "Key": "k8s.io/cluster-autoscaler/enabled",
+    "Value": "true"
+   },
+   {
+    "Key": "Name",
+    "Value": "etcd-us-east-2a"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0c375efc03f584971",
+  "VolumeType": "gp2"
+ },
+ {
+  "Attachments": [
+   {
+    "AttachTime": "2023-08-08T18:08:41Z",
+    "DeleteOnTermination": true,
+    "Device": "/dev/xvda",
+    "InstanceId": "i-0b6c5204e5e81144e",
+    "State": "attached",
+    "VolumeId": "vol-0c96a76db265bc1f8"
+   }
+  ],
+  "AvailabilityZone": "us-east-2a",
+  "CreateTime": "2023-08-08T18:08:41.725Z",
+  "Encrypted": false,
+  "FastRestored": null,
+  "Iops": 100,
+  "KmsKeyId": null,
+  "MultiAttachEnabled": false,
+  "OutpostArn": null,
+  "Size": 20,
+  "SnapshotId": "snap-01ecdc54cddaa0fef",
+  "SseType": "",
+  "State": "in-use",
+  "Tags": [
+   {
+    "Key": "eks:nodegroup-name",
+    "Value": "default"
+   },
+   {
+    "Key": "k8s.io/cluster-autoscaler/enabled",
+    "Value": "true"
+   },
+   {
+    "Key": "eks:cluster-name",
+    "Value": "terraform-cluster"
+   },
+   {
+    "Key": "k8s.io/cluster-autoscaler/terraform-cluster",
+    "Value": "owned"
+   },
+   {
+    "Key": "Name",
+    "Value": "default"
+   }
+  ],
+  "Throughput": null,
+  "VolumeId": "vol-0c96a76db265bc1f8",
+  "VolumeType": "gp2"
+ }
+]
