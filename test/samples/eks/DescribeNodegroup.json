@@ -1,0 +1,48 @@
+{
+ "Nodegroup": {
+  "AmiType": "AL2_x86_64",
+  "CapacityType": "ON_DEMAND",
+  "ClusterName": "eks-test",
+  "CreatedAt": "2023-08-03T19:54:22.819Z",
+  "DiskSize": 10,
+  "Health": {
+   "Issues": []
+  },
+  "InstanceTypes": [
+   "t3.small"
+  ],
+  "Labels": {},
+  "LaunchTemplate": null,
+  "ModifiedAt": "2023-08-25T22:44:53.414Z",
+  "NodeRole": "arn:aws:iam::000000000000:role/EKSNodeRole",
+  "NodegroupArn": "arn:aws:eks:us-east-2:000000000000:nodegroup/eks-test/Default/14c4de7b-9500-44c3-07d1-04e188d63b1a",
+  "NodegroupName": "Default",
+  "ReleaseVersion": "1.27.3-20230728",
+  "RemoteAccess": null,
+  "Resources": {
+   "AutoScalingGroups": [
+    {
+     "Name": "eks-Default-14c4de7b-9500-44c3-07d1-04e188d63b1a"
+    }
+   ],
+   "RemoteAccessSecurityGroup": null
+  },
+  "ScalingConfig": {
+   "DesiredSize": 2,
+   "MaxSize": 10,
+   "MinSize": 1
+  },
+  "Status": "ACTIVE",
+  "Subnets": [
+   "subnet-0f415fe2477fd2b2c",
+   "subnet-0b1cc6cdd1324634e"
+  ],
+  "Tags": {},
+  "Taints": null,
+  "UpdateConfig": {
+   "MaxUnavailable": 1,
+   "MaxUnavailablePercentage": null
+  },
+  "Version": "1.27"
+ }
+}

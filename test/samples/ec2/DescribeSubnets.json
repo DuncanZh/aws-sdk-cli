@@ -1,0 +1,907 @@
+[
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2a",
+  "AvailabilityZoneId": "use2-az1",
+  "AvailableIpAddressCount": 4088,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": true,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0516e3218b3faac62",
+  "SubnetId": "subnet-0516e3218b3faac62",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/role/elb",
+    "Value": "1"
+   },
+   {
+    "Key": "Name",
+    "Value": "项目-subnet-public1-us-east-2a"
+   }
+  ],
+  "VpcId": "vpc-0059e8ce324924fe5"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2b",
+  "AvailabilityZoneId": "use2-az2",
+  "AvailableIpAddressCount": 4090,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-097fde0dbc7adb537",
+  "SubnetId": "subnet-097fde0dbc7adb537",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "eks-test-customer2-us-east-2b"
+   },
+   {
+    "Key": "kubernetes.io/role/internal-elb",
+    "Value": "1"
+   }
+  ],
+  "VpcId": "vpc-098b48917ef5e624f"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2b",
+  "AvailabilityZoneId": "use2-az2",
+  "AvailableIpAddressCount": 4089,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": true,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": true,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0348616e8eac37a39",
+  "SubnetId": "subnet-0348616e8eac37a39",
+  "Tags": null,
+  "VpcId": "vpc-02a9b918570f4723a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2a",
+  "AvailabilityZoneId": "use2-az1",
+  "AvailableIpAddressCount": 248,
+  "CidrBlock": "1.1.1.1/24",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-02499e96d017186c7",
+  "SubnetId": "subnet-02499e96d017186c7",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "shared"
+   },
+   {
+    "Key": "kubernetes.io/role/elb",
+    "Value": "1"
+   },
+   {
+    "Key": "Name",
+    "Value": "vpc-terraform-cluster-public-us-east-2a"
+   }
+  ],
+  "VpcId": "vpc-0788b7737b410da9a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2b",
+  "AvailabilityZoneId": "use2-az2",
+  "AvailableIpAddressCount": 4085,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": true,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-03335d5173f6635db",
+  "SubnetId": "subnet-03335d5173f6635db",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "项目-subnet-public2-us-east-2b"
+   },
+   {
+    "Key": "kubernetes.io/role/elb",
+    "Value": "1"
+   }
+  ],
+  "VpcId": "vpc-0059e8ce324924fe5"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2c",
+  "AvailabilityZoneId": "use2-az3",
+  "AvailableIpAddressCount": 239,
+  "CidrBlock": "1.1.1.1/24",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0c55bcdc4f873c459",
+  "SubnetId": "subnet-0c55bcdc4f873c459",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "vpc-terraform-cluster-etcd-us-east-2c"
+   }
+  ],
+  "VpcId": "vpc-0788b7737b410da9a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2b",
+  "AvailabilityZoneId": "use2-az2",
+  "AvailableIpAddressCount": 4091,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0be4b8afa354839ee",
+  "SubnetId": "subnet-0be4b8afa354839ee",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "eks-test-etcd-us-east-2b"
+   }
+  ],
+  "VpcId": "vpc-098b48917ef5e624f"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2b",
+  "AvailabilityZoneId": "use2-az2",
+  "AvailableIpAddressCount": 249,
+  "CidrBlock": "1.1.1.1/24",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0abb93943e1aa0eec",
+  "SubnetId": "subnet-0abb93943e1aa0eec",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "vpc-terraform-cluster-public-us-east-2b"
+   },
+   {
+    "Key": "kubernetes.io/role/elb",
+    "Value": "1"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "shared"
+   }
+  ],
+  "VpcId": "vpc-0788b7737b410da9a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2a",
+  "AvailabilityZoneId": "use2-az1",
+  "AvailableIpAddressCount": 232,
+  "CidrBlock": "1.1.1.1/24",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0cec159ca76e638f0",
+  "SubnetId": "subnet-0cec159ca76e638f0",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "shared"
+   },
+   {
+    "Key": "kubernetes.io/role/internal-elb",
+    "Value": "1"
+   },
+   {
+    "Key": "Name",
+    "Value": "vpc-terraform-cluster-private-us-east-2a"
+   }
+  ],
+  "VpcId": "vpc-0788b7737b410da9a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2a",
+  "AvailabilityZoneId": "use2-az1",
+  "AvailableIpAddressCount": 4087,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": true,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": true,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-007cc8398b0f19cfd",
+  "SubnetId": "subnet-007cc8398b0f19cfd",
+  "Tags": null,
+  "VpcId": "vpc-02a9b918570f4723a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2c",
+  "AvailabilityZoneId": "use2-az3",
+  "AvailableIpAddressCount": 233,
+  "CidrBlock": "1.1.1.1/24",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-06978e6eb0f530528",
+  "SubnetId": "subnet-06978e6eb0f530528",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "shared"
+   },
+   {
+    "Key": "kubernetes.io/role/internal-elb",
+    "Value": "1"
+   },
+   {
+    "Key": "Name",
+    "Value": "vpc-terraform-cluster-private-us-east-2c"
+   }
+  ],
+  "VpcId": "vpc-0788b7737b410da9a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2b",
+  "AvailabilityZoneId": "use2-az2",
+  "AvailableIpAddressCount": 4072,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0b1cc6cdd1324634e",
+  "SubnetId": "subnet-0b1cc6cdd1324634e",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "eks-test-subnet-private2-us-east-2b"
+   },
+   {
+    "Key": "kubernetes.io/role/internal-elb",
+    "Value": "1"
+   }
+  ],
+  "VpcId": "vpc-098b48917ef5e624f"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2a",
+  "AvailabilityZoneId": "use2-az1",
+  "AvailableIpAddressCount": 4089,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0ac1649b3616342a6",
+  "SubnetId": "subnet-0ac1649b3616342a6",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "eks-test-subnet-public1-us-east-2a"
+   }
+  ],
+  "VpcId": "vpc-098b48917ef5e624f"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2a",
+  "AvailabilityZoneId": "use2-az1",
+  "AvailableIpAddressCount": 239,
+  "CidrBlock": "1.1.1.1/24",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0f82f271f16d5e296",
+  "SubnetId": "subnet-0f82f271f16d5e296",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "vpc-terraform-cluster-etcd-us-east-2a"
+   }
+  ],
+  "VpcId": "vpc-0788b7737b410da9a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2a",
+  "AvailabilityZoneId": "use2-az1",
+  "AvailableIpAddressCount": 4090,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0e09b58bf84f868da",
+  "SubnetId": "subnet-0e09b58bf84f868da",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "eks-test-customer1-us-east-2a"
+   },
+   {
+    "Key": "kubernetes.io/role/internal-elb",
+    "Value": "1"
+   }
+  ],
+  "VpcId": "vpc-098b48917ef5e624f"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2b",
+  "AvailabilityZoneId": "use2-az2",
+  "AvailableIpAddressCount": 4090,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0cff174c9ac9e4254",
+  "SubnetId": "subnet-0cff174c9ac9e4254",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "eks-test-subnet-public2-us-east-2b"
+   }
+  ],
+  "VpcId": "vpc-098b48917ef5e624f"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2c",
+  "AvailabilityZoneId": "use2-az3",
+  "AvailableIpAddressCount": 249,
+  "CidrBlock": "1.1.1.1/24",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0464caf994c6e6a60",
+  "SubnetId": "subnet-0464caf994c6e6a60",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "shared"
+   },
+   {
+    "Key": "kubernetes.io/role/elb",
+    "Value": "1"
+   },
+   {
+    "Key": "Name",
+    "Value": "vpc-terraform-cluster-public-us-east-2c"
+   }
+  ],
+  "VpcId": "vpc-0788b7737b410da9a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2a",
+  "AvailabilityZoneId": "use2-az1",
+  "AvailableIpAddressCount": 4076,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0f415fe2477fd2b2c",
+  "SubnetId": "subnet-0f415fe2477fd2b2c",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/role/internal-elb",
+    "Value": "1"
+   },
+   {
+    "Key": "Name",
+    "Value": "eks-test-subnet-private1-us-east-2a"
+   }
+  ],
+  "VpcId": "vpc-098b48917ef5e624f"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2b",
+  "AvailabilityZoneId": "use2-az2",
+  "AvailableIpAddressCount": 239,
+  "CidrBlock": "1.1.1.1/24",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-090f75918528c8aaf",
+  "SubnetId": "subnet-090f75918528c8aaf",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "vpc-terraform-cluster-etcd-us-east-2b"
+   }
+  ],
+  "VpcId": "vpc-0788b7737b410da9a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2c",
+  "AvailabilityZoneId": "use2-az3",
+  "AvailableIpAddressCount": 4084,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": true,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": true,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0abf19a4105d26948",
+  "SubnetId": "subnet-0abf19a4105d26948",
+  "Tags": null,
+  "VpcId": "vpc-02a9b918570f4723a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2a",
+  "AvailabilityZoneId": "use2-az1",
+  "AvailableIpAddressCount": 4089,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-0fd281860644edb66",
+  "SubnetId": "subnet-0fd281860644edb66",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "eks-test-customer2-us-east-2a"
+   },
+   {
+    "Key": "kubernetes.io/role/internal-elb",
+    "Value": "1"
+   }
+  ],
+  "VpcId": "vpc-098b48917ef5e624f"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2b",
+  "AvailabilityZoneId": "use2-az2",
+  "AvailableIpAddressCount": 232,
+  "CidrBlock": "1.1.1.1/24",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-09dd1eea8e0c2bbdd",
+  "SubnetId": "subnet-09dd1eea8e0c2bbdd",
+  "Tags": [
+   {
+    "Key": "kubernetes.io/role/internal-elb",
+    "Value": "1"
+   },
+   {
+    "Key": "kubernetes.io/cluster/terraform-cluster",
+    "Value": "shared"
+   },
+   {
+    "Key": "Name",
+    "Value": "vpc-terraform-cluster-private-us-east-2b"
+   }
+  ],
+  "VpcId": "vpc-0788b7737b410da9a"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2b",
+  "AvailabilityZoneId": "use2-az2",
+  "AvailableIpAddressCount": 4089,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-016e5f8673f506e84",
+  "SubnetId": "subnet-016e5f8673f506e84",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "eks-test-customer1-us-east-2b"
+   },
+   {
+    "Key": "kubernetes.io/role/internal-elb",
+    "Value": "1"
+   }
+  ],
+  "VpcId": "vpc-098b48917ef5e624f"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2a",
+  "AvailabilityZoneId": "use2-az1",
+  "AvailableIpAddressCount": 4091,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-00b9e606789cf3900",
+  "SubnetId": "subnet-00b9e606789cf3900",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "eks-test-etcd-us-east-2a"
+   }
+  ],
+  "VpcId": "vpc-098b48917ef5e624f"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2b",
+  "AvailabilityZoneId": "use2-az2",
+  "AvailableIpAddressCount": 4083,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-09d169f4f99c959b5",
+  "SubnetId": "subnet-09d169f4f99c959b5",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "项目-subnet-private2-us-east-2b"
+   },
+   {
+    "Key": "kubernetes.io/role/internal-elb",
+    "Value": "1"
+   }
+  ],
+  "VpcId": "vpc-0059e8ce324924fe5"
+ },
+ {
+  "AssignIpv6AddressOnCreation": false,
+  "AvailabilityZone": "us-east-2a",
+  "AvailabilityZoneId": "use2-az1",
+  "AvailableIpAddressCount": 4081,
+  "CidrBlock": "1.1.1.1/20",
+  "CustomerOwnedIpv4Pool": null,
+  "DefaultForAz": false,
+  "EnableDns64": false,
+  "EnableLniAtDeviceIndex": null,
+  "Ipv6CidrBlockAssociationSet": [],
+  "Ipv6Native": false,
+  "MapCustomerOwnedIpOnLaunch": false,
+  "MapPublicIpOnLaunch": false,
+  "OutpostArn": null,
+  "OwnerId": "000000000000",
+  "PrivateDnsNameOptionsOnLaunch": {
+   "EnableResourceNameDnsAAAARecord": false,
+   "EnableResourceNameDnsARecord": false,
+   "HostnameType": "ip-name"
+  },
+  "State": "available",
+  "SubnetArn": "arn:aws:ec2:us-east-2:000000000000:subnet/subnet-089967b7b52559174",
+  "SubnetId": "subnet-089967b7b52559174",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "项目-subnet-private1-us-east-2a"
+   },
+   {
+    "Key": "kubernetes.io/role/internal-elb",
+    "Value": "1"
+   }
+  ],
+  "VpcId": "vpc-0059e8ce324924fe5"
+ }
+]

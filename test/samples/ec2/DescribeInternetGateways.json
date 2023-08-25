@@ -1,0 +1,61 @@
+[
+ {
+  "Attachments": [
+   {
+    "State": "available",
+    "VpcId": "vpc-02a9b918570f4723a"
+   }
+  ],
+  "InternetGatewayId": "igw-03879054890353eb4",
+  "OwnerId": "000000000000",
+  "Tags": []
+ },
+ {
+  "Attachments": [
+   {
+    "State": "available",
+    "VpcId": "vpc-0788b7737b410da9a"
+   }
+  ],
+  "InternetGatewayId": "igw-05fa5358f9bd69e6e",
+  "OwnerId": "000000000000",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "vpc-terraform-cluster"
+   }
+  ]
+ },
+ {
+  "Attachments": [
+   {
+    "State": "available",
+    "VpcId": "vpc-0059e8ce324924fe5"
+   }
+  ],
+  "InternetGatewayId": "igw-0d071c4ee45d87bdb",
+  "OwnerId": "000000000000",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "项目-igw"
+   }
+  ]
+ },
+ {
+  "Attachments": [
+   {
+    "State": "available",
+    "VpcId": "vpc-098b48917ef5e624f"
+   }
+  ],
+  "InternetGatewayId": "igw-0d70eedda38584168",
+  "OwnerId": "000000000000",
+  "Tags": [
+   {
+    "Key": "Name",
+    "Value": "eks-test-igw"
+   }
+  ]
+ }
+]

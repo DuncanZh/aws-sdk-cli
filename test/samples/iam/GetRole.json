@@ -1,0 +1,18 @@
+{
+ "Role": {
+  "Arn": "arn:aws:iam::000000000000:role/aws-service-role/eks.amazonaws.com/AWSServiceRoleForAmazonEKS",
+  "CreateDate": "2023-04-07T12:32:02Z",
+  "Path": "/aws-service-role/eks.amazonaws.com/",
+  "RoleId": "AROAXNFHRMIAMFN3LUS3O",
+  "RoleName": "AWSServiceRoleForAmazonEKS",
+  "AssumeRolePolicyDocument": "%7B%22Version%22%3A%222012-10-17%22%2C%22Statement%22%3A%5B%7B%22Effect%22%3A%22Allow%22%2C%22Principal%22%3A%7B%22Service%22%3A%22eks.amazonaws.com%22%7D%2C%22Action%22%3A%22sts%3AAssumeRole%22%7D%5D%7D",
+  "Description": "Allows Amazon EKS to call AWS services on your behalf.",
+  "MaxSessionDuration": 3600,
+  "PermissionsBoundary": null,
+  "RoleLastUsed": {
+   "LastUsedDate": "2023-08-25T22:33:49Z",
+   "Region": "us-east-2"
+  },
+  "Tags": null
+ }
+}
