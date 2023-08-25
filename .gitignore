@@ -22,4 +22,5 @@ go.work
 
 *.json
 
-!samples/*
+!test/samples/*/*
+!test/params/*/*

@@ -4,14 +4,16 @@ go 1.21
 
 require (
 	github.com/abiosoft/ishell/v2 v2.0.2
+	github.com/abiosoft/readline v0.0.0-20180607040430-155bce2042db
 	github.com/aws/aws-sdk-go-v2 v1.21.0
 	github.com/aws/aws-sdk-go-v2/config v1.18.36
 	github.com/aws/aws-sdk-go-v2/service/ec2 v1.114.0
+	github.com/aws/aws-sdk-go-v2/service/eks v1.29.5
+	github.com/aws/aws-sdk-go-v2/service/iam v1.22.5
 )
 
 require (
 	github.com/abiosoft/ishell v2.0.0+incompatible // indirect
-	github.com/abiosoft/readline v0.0.0-20180607040430-155bce2042db // indirect
 	github.com/aws/aws-sdk-go-v2/credentials v1.13.35 // indirect
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.13.11 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/configsources v1.1.41 // indirect

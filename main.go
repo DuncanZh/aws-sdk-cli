@@ -2,14 +2,11 @@ package main
 
 import (
 	"AWS_API/api"
-	"encoding/json"
 	"fmt"
 	"github.com/abiosoft/ishell/v2"
 	"github.com/abiosoft/readline"
 	"os"
-	"path/filepath"
 	"reflect"
-	"strings"
 	"time"
 )
 
@@ -21,36 +18,49 @@ func main() {
 	}()
 
 	VERSION := "0.1.0"
-	PROMPT := "msgraph_cli v" + VERSION + " $ "
+	PROMPT := "aws_sdk_cli v" + VERSION + " $ "
 
 	shell := ishell.NewWithConfig(&readline.Config{Prompt: PROMPT})
-	shell.SetHomeHistoryPath(".msgraph_shell_history")
+	shell.SetHomeHistoryPath(".aws_sdk_cli_shell_history")
 
 	shell.Set("api", api.NewAPI())
 
-	describeResources := []string{"instances", "reservedInstances", "volumes", "volumeStatus", "subnets",
-		"securityGroups", "securityGroupRules", "natGateways", "internetGateways"}
+	serviceList := []string{"ec2", "eks", "iam"}
 
-	shell.Set("describe", describeResources)
+	ec2List := []string{"DescribeInstances", "DescribeReservedInstances", "DescribeVolumes",
+		"DescribeVolumeStatus", "DescribeSubnets", "DescribeSecurityGroups", "DescribeSecurityGroupRules",
+		"DescribeNatGateways", "DescribeInternetGateways"}
+
+	eksList := []string{"DescribeCluster", "DescribeNodegroup", "ListClusters", "ListNodegroups"}
+
+	iamList := []string{"GetRole", "GetUser", "GetUserPolicy", "ListAccessKeys", "ListAttachedRolePolicies",
+		"ListGroups", "ListPolicies", "ListRoles", "ListUsers", "ListUserTags"}
+
+	shell.Set("service", serviceList)
+	shell.Set("ec2", ec2List)
+	shell.Set("eks", eksList)
+	shell.Set("iam", iamList)
 
 	shell.AddCmd(&ishell.Cmd{
-		Name: "describe",
-		Help: "Usage: describe <resource> <output_file> [ids...]",
+		Name: "run",
+		Help: "Usage: run <service> <action> <output_file> [params_file]",
 		CompleterWithPrefix: func(prefix string, args []string) []string {
 			if len(args) == 0 {
-				return shell.Get("describe").([]string)
+				return shell.Get("service").([]string)
 			} else if len(args) == 1 {
-				return getDirectory(prefix)
+				return shell.Get(args[0]).([]string)
+			} else if len(args) == 2 || len(args) == 3 {
+				return api.GetDirectory(prefix)
 			}
 			return []string{}
 		},
-		Func: describe,
+		Func: run,
 	})
 
 	if len(os.Args) > 1 {
 		err := shell.Process(os.Args[1:]...)
 		if err != nil {
-			fmt.Println("Error: " + err.Error())
+			api.PrintError(err)
 		}
 	} else {
 		shell.Println("Interactive Shell:")
@@ -59,87 +69,46 @@ func main() {
 	}
 }
 
-func describe(c *ishell.Context) {
+func run(c *ishell.Context) {
 	start := time.Now()
 
-	a := c.Get("api").(*api.AwsAPI)
+	a := c.Get("api").(*api.AWSAPI)
 
-	var ids []string
-	if len(c.Args) > 2 {
-		ids = c.Args[2:]
-	} else if len(c.Args) < 2 {
+	inputFile := ""
+	if len(c.Args) == 3 {
+		inputFile = c.Args[3]
+	} else if len(c.Args) != 2 {
 		fmt.Println(c.Cmd.Help)
 		return
 	}
 
-	resource := c.Args[0]
-	outputFile := c.Args[1]
+	service := c.Args[0]
+	action := c.Args[1]
+	outputFile := c.Args[2]
 
-	result := a.Describe(resource, ids)
+	var params []byte
+	var err error
+	if inputFile != "" {
+		params, err = os.ReadFile(inputFile)
+		if err != nil {
+			api.PrintError(err)
+			return
+		}
+	}
+
+	result := a.Operate(service, action, params)
 
 	if result == nil {
 		fmt.Printf("Failed: Unable to process the input in %.2f seconds\n", time.Since(start).Seconds())
 		return
 	}
 
-	if dumpFile(result, outputFile, true) {
-		fmt.Printf("Success: Processed %v entries in %.2f seconds\n", reflect.ValueOf(result).Len(), time.Since(start).Seconds())
-	}
-}
-
-func getDirectory(prefix string) []string {
-	path := "./" + prefix
-	if f, err := os.Stat(path); err == nil {
-		if !f.IsDir() {
-			return []string{prefix}
-		}
-	} else {
-		path = path[:strings.LastIndex(path, "/")] + "/"
+	entries := 1
+	if reflect.ValueOf(result).Kind().String() == "slice" {
+		entries = reflect.ValueOf(result).Len()
 	}
 
-	entries, _ := os.ReadDir(path)
-
-	var es []string
-	for _, e := range entries {
-		if path == "./" {
-			es = append(es, e.Name())
-		} else {
-			es = append(es, filepath.Dir(path[2:]+"/")+"/"+e.Name())
-		}
+	if api.DumpFile(result, outputFile, true) {
+		fmt.Printf("Success: Processed %v entries in %.2f seconds\n", entries, time.Since(start).Seconds())
 	}
-	return es
-}
-
-func dumpFile(result interface{}, file string, pretty bool) bool {
-	j, err := json.Marshal(result)
-	if pretty {
-		j, err = json.MarshalIndent(result, "", " ")
-	}
-
-	if err != nil {
-		api.PrintError(err.Error())
-		return false
-	}
-
-	err = os.MkdirAll(filepath.Dir(file), 0777)
-	if err != nil {
-		api.PrintError(err.Error())
-		return false
-	}
-
-	f, err := os.Create(file)
-	if err != nil {
-		api.PrintError(err.Error())
-		return false
-	}
-	defer f.Close()
-
-	_, err = f.Write(j)
-
-	if err != nil {
-		api.PrintError(err.Error())
-		return false
-	}
-
-	return true
 }

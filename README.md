@@ -21,25 +21,34 @@ go run main.go
 
 ### Commands
 
-#### 1. `describe`
+#### 1. `run`
 
-Describe the specific resource and dump to `output_file`.
+Perform the specific `action` from the `service` and dump the result to `output_file`.
 
-Accepts arbitrary amount of resource ids to describe certain items, defaults to retrieve all items of the type if not specified.
+Accepts an optional `params_file` in JSON that adds required and optional parameters to the action.
 
-Refer to the official document for more available resources.
+If you are not sure about required parameters, you may perform the action without parameters and refer to the error information.
+
+Note that the auto-complete only lists common services and actions, but you may specify any of the available actions.
+
+By default, the cli supports `ec2` and `iam` services.
+You can add supports for any services by appending necessary information to function `fetchClient` in `clients.go`.
+
+Refer to the official document for all available services, actions, and parameters.
 
 ```
-describe <resource> <output_file> [ids...]
+run <service> <action> <output_file> [params_file]
 ```
 
 ## Examples
 
-See `samples` folder for more sample outputs.
+See `test` folder for more sample usages.
 
-**Describe**:
+If you want to perform the test on your own, make sure to use valid parameter files.
 
-`describe instances instances.json`
+**Run**:
+
+`run ec2 GetInstances instances.json params.json`
 
 *instances.json*
 
@@ -52,7 +61,6 @@ See `samples` folder for more sample outputs.
         "AmiLaunchIndex": 0,
         "Architecture": "x86_64"
       }
-      ...
     ]
   },
   {
@@ -62,10 +70,8 @@ See `samples` folder for more sample outputs.
         "AmiLaunchIndex": 0,
         "Architecture": "x86_64"
       }
-      ...
     ]
-  },
-  ...
+  }
 ]
 ```
 
@@ -74,5 +80,6 @@ See `samples` folder for more sample outputs.
 1. **AWS SDK v2**:
     - [Official Documentation](https://aws.github.io/aws-sdk-go-v2/docs)
     - [GitHub Repository](https://github.com/aws/aws-sdk-go-v2)
+    - [API Reference](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2)
 2. **Interactive Shell Library (ishell)**:
     - [GitHub Repository](https://github.com/abiosoft/ishell)
