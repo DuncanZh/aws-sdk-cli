@@ -1,0 +1,197 @@
+package api
+
+import (
+	"encoding/xml"
+	"fmt"
+	"github.com/aws/aws-sdk-go/aws/credentials"
+	"github.com/aws/aws-sdk-go/aws/signer/v4"
+	"github.com/clbanning/mxj/v2"
+	"io"
+	"net/http"
+	"strconv"
+	"strings"
+	"time"
+)
+
+type API struct {
+	region     string
+	credential *credentials.Credentials
+	signer     *v4.Signer
+	httpClient *http.Client
+}
+
+func NewAPI() *API {
+	a := API{}
+	a.region = "us-east-2"
+	a.credential = credentials.NewSharedCredentials("", "")
+	a.signer = a.newSigner()
+	a.httpClient = &http.Client{}
+	return &a
+}
+
+func (a *API) Operate(service string, action string, params map[string]interface{}) interface{} {
+	params["Action"] = action
+	params["Version"] = version(service)
+
+	req := a.newRequest(service, params)
+	result := a.sendRequest(service, action, req)
+
+	return result
+}
+
+func (a *API) sendRequest(service string, action string, req *http.Request) []interface{} {
+	nextToken := "-1"
+	var result []interface{}
+
+	for nextToken != "" {
+		resp, err := a.httpClient.Do(req)
+		if err != nil {
+			printError(err)
+			return nil
+		}
+
+		if !checkResp(resp) {
+			return nil
+		}
+
+		body := parseBody(resp.Body)
+		for _, r := range body {
+			switch rm := r.(type) {
+			case map[string]interface{}:
+				if rm["nextToken"] != nil {
+					nextToken = rm["nextToken"].(string)
+				} else {
+					nextToken = ""
+				}
+				for _, v := range rm {
+					switch vm := v.(type) {
+					case map[string]interface{}:
+						handleItem(vm)
+						result = append(result, vm["item"].([]interface{})...)
+					}
+				}
+			}
+		}
+
+		req = a.newRequest(service, map[string]interface{}{
+			"NextToken": nextToken, "Action": action, "Version": version(service)})
+	}
+	return result
+}
+
+func handleItem(e interface{}) {
+	switch m := e.(type) {
+	case []interface{}:
+		for _, item := range m {
+			handleItem(item)
+		}
+	case map[string]interface{}:
+		for key, value := range m {
+			switch v := value.(type) {
+			case map[string]interface{}:
+				for subKey, subValue := range v {
+					if subKey == "item" {
+						switch subValue.(type) {
+						case map[string]interface{}:
+							m[key] = []map[string]interface{}{
+								subValue.(map[string]interface{}),
+							}
+						default:
+							m[key] = subValue
+						}
+					}
+				}
+			}
+			handleItem(value)
+		}
+	}
+}
+
+func (a *API) newSigner() *v4.Signer {
+	return &v4.Signer{
+		Credentials: a.credential,
+	}
+}
+
+func (a *API) newRequest(service string, params map[string]interface{}) *http.Request {
+	var query string
+	buildQuery(params, "", &query)
+	query = strings.Replace(query, "&", "?", 1)
+
+	url := "https://" + service + ".amazonaws.com" + query
+	req, _ := http.NewRequest("GET", url, nil)
+
+	fmt.Println(url)
+
+	_, err := a.signer.Sign(req, nil, service, a.region, time.Now())
+	if err != nil {
+		printError(err)
+		return nil
+	}
+
+	return req
+}
+
+func parseBody(body io.ReadCloser) map[string]interface{} {
+	val, _ := io.ReadAll(body)
+	m, _ := mxj.NewMapXml(val)
+
+	return m
+}
+
+func version(service string) string {
+	switch service {
+	case "ec2":
+		return "2016-11-15"
+	case "iam":
+		return "2010-05-08"
+	}
+	return ""
+}
+
+func printError(err error) {
+	fmt.Print("Error: ")
+	fmt.Println(err)
+}
+
+func checkResp(resp *http.Response) bool {
+	if resp.StatusCode >= 400 {
+		e, _ := io.ReadAll(resp.Body)
+
+		fmt.Println(string(e))
+
+		err := &xmlError{}
+		xml.Unmarshal(e, err)
+		fmt.Println(err.Code + ": " + err.Message)
+		return false
+	}
+	return true
+}
+
+type xmlError struct {
+	Code    string `xml:"Errors>Error>Code"`
+	Message string `xml:"Errors>Error>Message"`
+}
+
+func buildQuery(param interface{}, prefix string, result *string) {
+	switch v := param.(type) {
+	case float64:
+		*result += "&" + prefix + "=" + strconv.Itoa(int(v))
+	case string:
+		*result += "&" + prefix + "=" + v
+	case []interface{}:
+		for i, item := range v {
+			newPrefix := prefix + "." + strconv.Itoa(i+1)
+			buildQuery(item, newPrefix, result)
+		}
+	case map[string]interface{}:
+		for key, value := range v {
+			newPrefix := prefix
+			if prefix != "" {
+				newPrefix += "."
+			}
+			newPrefix += key
+			buildQuery(value, newPrefix, result)
+		}
+	}
+}
