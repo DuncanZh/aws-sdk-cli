@@ -48,7 +48,7 @@ If you want to perform the test on your own, make sure to use valid parameter fi
 
 **Run**:
 
-`run ec2 GetInstances instances.json params.json`
+`run ec2 DescribeInstances instances.json params.json`
 
 *instances.json*
 

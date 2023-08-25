@@ -75,9 +75,9 @@ func run(c *ishell.Context) {
 	a := c.Get("api").(*api.AWSAPI)
 
 	inputFile := ""
-	if len(c.Args) == 3 {
+	if len(c.Args) == 4 {
 		inputFile = c.Args[3]
-	} else if len(c.Args) != 2 {
+	} else if len(c.Args) != 3 {
 		fmt.Println(c.Cmd.Help)
 		return
 	}
